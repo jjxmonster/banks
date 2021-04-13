@@ -96,10 +96,10 @@ setInterval(() => {
    let totalCash = 0;
    banks.forEach(item => {
       const { name, cash } = item;
-      console.log(`${name}: ${cash.toFixed(2)}`);
+      console.log(`${name}: ${cash.toFixed(2)} zł`);
       totalCash += cash;
    });
-   console.log(`Total Cash:${totalCash.toFixed(2)}`);
+   console.log(`Total Cash:${totalCash.toFixed(2)} zł`);
 }, 60000);
 
 capitalizationOfInterest(banks);
