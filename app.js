@@ -4,7 +4,6 @@ let banks = banksAccounts;
 let newBankWithHighterInterestRate;
 let actualBankWithHighterInterestRate = undefined;
 let makeTransfer;
-let totalFoundsOfAnotherAcc = 0;
 
 // kapitalizacja odsetek
 const capitalizationOfInterest = arr => {
@@ -57,6 +56,8 @@ const transferToHigherInterestRate = () => {
    const OthersBanks = banks.filter(
       item => item.id !== newBankWithHighterInterestRate.id
    );
+
+   let totalFoundsOfAnotherAcc = 0;
    // kwota przelewu do banku
    OthersBanks.map(bank => {
       const { cash } = bank;
