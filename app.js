@@ -99,6 +99,6 @@ setInterval(() => {
       totalCash += cash;
    });
    console.log(`Total Cash:${totalCash.toFixed(2)}`);
-}, 5000);
+}, 60000);
 
 capitalizationOfInterest(banks);
